@@ -16,7 +16,7 @@ aggregation by exact enumeration of an empirical bootstrap distribution.
 Each numbered folder is one pipeline stage, with the notebook at the top level
 and its outputs in `Result/`. The raw source data is **not redistributed
 here**, for size and licensing reasons; it is freely available online from the
-institutions themselves — the table below names every file and its download
+institutions themselves — the tables below name every file and its download
 location. All downstream stages (03b onward, including the verification) run
 entirely from the result files included in this repository. The notebooks
 locate their inputs by column signature, so a stage can be run by placing the
@@ -53,7 +53,8 @@ Stage 03a (archived vintages for the accuracy window):
 |---|---|---|
 | `OECD,DF_EO108_INTERNET,+..A.csv` … `OECD,DF_EO112_INTERNET,+..A.csv` | OECD Economic Outlook archived editions 108–112 | [OECD Data Explorer archive](https://data-explorer.oecd.org/) |
 | `WEOhistorical.xlsx` | IMF Historical WEO Forecasts Database | [IMF](https://www.imf.org/external/pubs/ft/weo/data/WEOhistorical.xlsx) |
-| AMECO archived vintages, Autumn 2020–Autumn 2022 | European Commission archived AMECO releases | [AMECO](https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en) |
+| `ameco_autumn2020.zip`, `ameco_spring2021.zip`, `ameco_autumn2021.zip`, `ameco_spring2022.zip`, `ameco_autumn2022.zip` | European Commission archived AMECO releases, the five scoring rounds | [AMECO archive](https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en) |
+| `WEOApr2026all.xlsx` | IMF WEO April 2026 — source of the realised outcomes | [IMF WEO database](https://www.imf.org/en/Publications/WEO) |
 
 To rebuild from raw sources, download the files above into a `Data/` folder
 inside the corresponding stage and run the stage notebook. To reproduce the
